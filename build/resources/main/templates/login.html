@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+</head>
+<body>
+<!-- <div th:insert="fragments/navbar.html :: navbar"></div> -->
+
+    <!-- Navigation Bar -->
+<div th:insert="fragments/navbar.html :: navbar"></div>
+    <!-- End of Navigation Bar -->
+
+
+
+    <!-- Login Form -->
+    <section>
+    <div class="container" id="login-container">
+
+        <div class="row" id="login-form">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+
+            <form th:action="@{/login}" method="post">
+                <div class="form-group">
+
+            <h2>Welcome!</h2>
+
+                    <div th:if="${param.error}" id="invalid-msg">Invalid username and password.</div>
+
+                    <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" aria-describedby="NameHelp" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class=" btn btn-outline-secondary home-btn">Log In</button>
+                </form>
+            </div>
+    <!--    <div class="col-sm">
+                <form th:action="@{/logout}" method="post">
+                <input type="submit" value="Logout" />
+                </form>
+            </div>    -->
+        </div>
+    </div>
+    </section>
+    <!-- End of Login Form -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="background-color: #fff8f1;">
+            <div class="navbar-dark bg-footer">
+                <div class="row justify-content-center align-items-center" id="navBottom">
+                    <p class="col-12 col-md-4 my-1">&copy JRS squad Copyright 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer-->
+<div th:insert="fragments/footer.html :: footer"></div>
+
+<!-- SCRIPTS AND STYLES-->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/login.css"/>
+</body>
+</html>

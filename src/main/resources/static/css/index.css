@@ -1,0 +1,47 @@
+body {
+    background-color: #fff8f1;
+}
+
+#navBottom {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#homeImg {
+    width: 90%;
+}
+
+#shopBtn {
+    background-color: #a8a129;
+    color: white;
+}
+
+.about-home {
+    font-size: 21px;
+    align-self: center;
+    width: 90%;
+    margin-top: 10px;
+    }
+
+
+
+@media only screen and (max-width: 1200px) {
+
+#homeImg {
+    
+    width: 95.5%; 
+}
+
+#navBottom {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#mySearch {
+   height: 40px;
+   align-self: center; 
+}
+
+
+}

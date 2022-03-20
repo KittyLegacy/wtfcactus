@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>About Us</title>
+</head>
+<body>
+
+<div th:insert="fragments/navbar.html :: navbar"></div>
+
+    <!-- End of mission vision -->  
+    <div class="form-wrapper">
+        <div class="container">
+          <div class="row featurette align-items-center">
+            <div class ="col-md-6 order-md-1 mt-5">
+              <img class="featurette-image img-fluid mx-auto" src="images/miscImage2.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-6 order-md-2 mt-5">
+              <h1 class="featurette-heading"><span class="text-muted">Mission</span></h1>
+              <p class="lead">We think that looking at plants make us happier, especially during the start of the COVID pandemic when we had to work from home. Being in a space while working continuously can feel dreary. Having a plant is like having a good friend around, who also supplies you with fresh air!
+  
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container pb-5 mb-5">
+          <div class="row featurette align-items-center">
+            <div class="col-md-6 order-md-2 mt-5">
+              <img class="featurette-image img-fluid mx-auto" src="images/miscImage1.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-6 order-md-1 mt-5">
+              <h1 class="featurette-heading"><span class="text-muted">Vision</span></h1>
+              <p class="lead">We want everyone to enjoy and appreciate natural beauty, even in imperfections. You will start looking forward and anticipate when your plant starts growing and when it starts unflurling new leaves to show you how happy it is.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of mission vision -->
+  
+  
+      <!-- Intro to the team -->
+      <div class= "container">
+          <h1 class="display-4 font-weight-normal text-center m-5 pb-3">'Say aloe!'</h1>
+          <div class="container mb-5 pb-5 d-flex text-center justify-content-center">
+              <div class="row">
+                <div class="col-lg-3 mb-4">
+                  <div id="cardStyle">
+                  <img src="images/jh.png" alt="Damien image" width="250" height="300">
+                <h2>Jinhao</h2>
+                <p>Currently in SGUnited Mid-Careers Pathways Program Company Training (SGUP-CT)Bootcamp, looking forward to working as a Junior Full Stack Developer</p>
+                <div class="profileLinks">
+                  <a href="https://github.com"><i class="fab fa-github" style='font-size:30px ; color:black'></i></a>
+                  <a href="https://sg.linkedin.com"><i class="fab fa-linkedin" style='font-size:30px; color:rgb(80, 80, 169)'></i></a>
+            </div>
+          </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                  <div id="cardStyle">
+                  <img src="images/ros.png" alt="Damien image" width="250" height="300">
+                  <h2>Ros</h2>
+                  <p>Legend has it that Ros might love her plants and pets more than humans. But we will never know cause she is an introvert, and she dislikes talking about herself so that’s all the info we have.</p>
+                  <div class="profileLinks">
+                    <a href="https://github.com"><i class="fab fa-github" style='font-size:30px ; color:black'></i></a>
+                    <a href="https://sg.linkedin.com"><i class="fab fa-linkedin" style='font-size:30px; color:rgb(80, 80, 169)'></i></a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                  <div id="cardStyle">
+                  <img src="images/seb.png" alt="Damien image" width="250" height="300">
+                    <h2>Sebastian</h2>
+                    <p>I start upgrading by upskilling my knowledge  through taking courses. I am thankful that Generation have given me this opportunity to study as a Junior full stack developer, and going into apprenticeship and gain employment thereafter.</p>
+                    <div class="profileLinks">
+                  <a href="https://github.com"><i class="fab fa-github" style='font-size:30px ; color:black'></i></a>
+                  <a href="https://sg.linkedin.com"><i class="fab fa-linkedin" style='font-size:30px; color:rgb(80, 80, 169)'></i></a>  
+                </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                  <div class="profileLinks">
+                  <img src="images/random.png" alt="Damien image" width="250" height="300">
+                  <h2>Not For Sale</h2>
+                  <p>Say aloe to our little friend! Our beautiful inspiration for this project and we can't stop looking at it!</p>
+                  
+                </div>
+                </div>
+              </div>
+            </div>
+
+      <!-- scroll button-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+      <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  <!-- scroll button end-->
+
+          <!-- Footer -->
+
+          <div th:insert="fragments/footer.html :: footer"></div>
+
+          <!-- End of Footer-->
+
+          <!-- SCRIPTS AND STYLES-->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<link rel="stylesheet" href="css/aboutUs.css"/>
+<link rel="stylesheet" href="css/scrollBtn.css"/>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

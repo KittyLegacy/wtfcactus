@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>Products Form</title>
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+
+   <div th:insert="fragments/navbar.html :: navbar"></div>
+
+  <!--End of Navigation Bar-->
+
+    <!-- The form -->
+    <fieldset>
+        <div class="container mt-5 mb-5 pb-4 d-flex justify-content-center align-items-center">
+          <div class="jumbotron col-md-5 order-md-2" style="background-color: #fff8f1;">
+          <legend class="display-5">Upload Form For Cactus</legend>
+          <form id="newItemForm" enctype="multipart/form-data">
+          <br />
+              <div class="formGroup">
+                <label for="newItemNameInput">Cactus Name:</label>
+                <input type="text" id="newItemNameInput" class="form-control" required/>
+              </div>
+              <br />
+              <div class="form-group-lg">
+                  <label for="newItemImageFile">Image Upload</label>
+                  <input type="file" id="newItemImageFile" name="newItemImageFile" accept="image/*" required>
+              </div>
+              <br />
+              <div class="form-group-lg">
+                <label for="newItemStyle">Who is this Cactus:</label>
+                <textarea type="text" id="newItemStyle" name="cactus_Style" class="form-control" required></textarea>
+              </div>
+              <br/>
+              <div class="formGroup">
+                  <label for="newItemPrice">$ The Dollar:</label>
+                  <input for type="number" id="newItemPrice" name="cactus_price" class="form-control" required>
+              </div>
+              <br />
+              <div class="text-center submit-buttons">
+                <button class="btn btn-outline-secondary home-btn" type="submit" id="upload-button">Upload</button>
+                <button class="btn btn-outline-secondary home-btn" type="reset" value="Reset" id="reset-button">Reset</button>
+              </div>
+      </fieldset>
+  </form>
+    <!-- End of the form -->
+
+   <!-- Footer -->
+
+   <div th:insert="fragments/footer.html :: footer"></div>
+
+   <!-- End of Footer-->
+
+<!-- SCRIPTS AND STYLES-->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/form.css"/>
+
+<script src="js/productController.js"></script>
+<script src="js/productForm.js"></script>
+
+</body>
+</html>

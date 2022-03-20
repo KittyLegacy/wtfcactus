@@ -1,0 +1,21 @@
+body {
+    background-color: #fff8f1;
+}
+
+#navBottom {
+    padding-top: 150px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+
+    #navBottom {
+        padding-top: 100px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
